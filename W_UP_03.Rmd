@@ -45,14 +45,27 @@ favstats(alcohol~Seat,data=ucdavis1)
 
 Numerical summary shows the the median for back seat consumption is 3.5, front seat consumption 0.0 and middle seat consumption is 4.0,
 
-
-
 ## inferential description
 
+```{r}
+model1 <- aov(alcohol~Seat,data=davisdata)
+summary.aov(model1)
+```
+
+The P value is 0.000116 is < 0.05 that mean that students in all the row did NOT consume the same amount of alcohol.
+
+```{r}
+plot(TukeyHSD(model1))
+```
+
+The model HSD shows that the people seated in the back row drink more  than the people sitting in the middle and front row. There is no evidence between alcohol consumption between  the middle and front row.
 
 
 
 # Conclusion and Discussion
+
+
+In order to answer this question is to 
 
 
 When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
