@@ -37,13 +37,23 @@ This boxplot shows that students who sit in the back row tend to drink more
 
 ## numerical description
 
+
+```{r}
+favstats(alcohol~Seat,data=ucdavis1)
+```
+
+
+Numerical summary shows the the median for back seat consumption is 3.5, front seat consumption 0.0 and middle seat consumption is 4.0,
+
+
+
 ## inferential description
+
+
+
 
 # Conclusion and Discussion
 
-## R Markdown
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
 When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
 
