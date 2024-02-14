@@ -1,0 +1,59 @@
+---
+title: "WUP-3"
+author: "Yessica Garay"
+date: "2024-02-14"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tigerstats)
+library(tidyverse)
+data(ucdavis1)
+davisdata = ucdavis1
+```
+
+# Introduction
+The research question is this: is there a diffrence in the average amount of alcohol consumed per week by students who sit in row 1, row 2 or row3 the UCdavis classroom
+
+
+$H_0$: There is no difference between the average number of drinks imbibed between people based on the row they sit in.
+
+$H_A$: The average number drinks is different between at least two rows.
+
+
+# Methods
+
+Data from UC Davis: Seat is categorical, and alcohol is numerical, so we used the Numerical~Cat helper file
+
+# Description 
+## graphical description
+
+
+```{r}
+boxplot(alcohol~Seat,data=davisdata)
+```
+
+This boxplot shows that students who sit in the back row tend to drink more
+
+
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
