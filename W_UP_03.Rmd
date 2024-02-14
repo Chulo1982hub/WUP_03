@@ -9,8 +9,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 library(tigerstats)
 library(tidyverse)
-data(ucdavis1)
-davisdata = ucdavis1
+davisdata=read.csv('UCDavis.csv')
 ```
 
 # Introduction
@@ -36,7 +35,11 @@ boxplot(alcohol~Seat,data=davisdata)
 
 This boxplot shows that students who sit in the back row tend to drink more
 
+## numerical description
 
+## inferential description
+
+# Conclusion and Discussion
 
 ## R Markdown
 
