@@ -65,10 +65,14 @@ The model HSD shows that the people seated in the back row drink more  than the 
 # Conclusion and Discussion
 
 
-In order to answer this question is to 
+To answer the question if the amount of drinking varies weekly between front, middle, and back seats. we mus find the numerical value  and categorical mean of the front seats. the grafic shows that the P value is less than 0.05, this result in the rejection of the $H_0$: There is no difference per week between the different seating rows. There is no difference between middle and front seats.
 
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+
+
+
+ 
 
 ```{r cars}
 summary(cars)
